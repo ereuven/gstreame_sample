@@ -1,0 +1,22 @@
+       +-------------------+
+       |   MAIN COMPUTER   |
+       |   (Video Source)  |
+       +---------+---------+
+                 |
+       +---------+---------+
+       |  GStreamer AppSrc |
+       +---------+---------+
+        /                   \
+       /                     \
+Computer A (Face)      Computer B (LPR)
+(GStreamer sink)        (GStreamer sink)
+       |                     |
+ Face-rec result        LPR result
+       \                     /
+        \                   /
+       +-------------------+
+       |   MAIN COMPUTER   |
+       |  Results logic    |
+       +-------------------+
+                 |
+         Display alert
